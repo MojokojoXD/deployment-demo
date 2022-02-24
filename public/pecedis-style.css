@@ -117,7 +117,7 @@ i{
 .button {
     transition: all .5s ease;
     color: white;
-    border: 1px solid #ffffff;
+    border: 1px solid #8b8178;
     font-family:'lato','verdana' sans-serif;
     /* text-transform: uppercase; */
     text-align: center;
@@ -135,6 +135,6 @@ i{
 .button:hover {
     color: white;
     background-color: transparent;
-    border: 5px solid white;
+    border: 5px solid #8b8178;
 }
 
