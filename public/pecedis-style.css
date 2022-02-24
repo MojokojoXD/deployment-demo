@@ -68,23 +68,10 @@ main{
     flex-wrap: wrap;
     justify-content:center;
     width: 80%;
-    height: 15vh;
+    height: 30vh;
     margin-top: 10px;
 }
 
-.custom-buttons{
-    height: 90%;
-    width: 150px;
-    font-size:calc(12px + .5vw);
-    margin: 10px;
-    /* margin-right: 20px; */
-    border-radius: 10px;
-    border: gray;
-    box-shadow: 1.5px 1.5px 5px gray;
-    min-width: 20vh;
-    color: #101f30;
-    font-weight:700;
-}
 
 #tagline-1{
     text-align: center;
@@ -113,4 +100,28 @@ footer{
 i{
     font-size:calc(20px + 2vw);
     color: #09b5a2;
+}
+
+.button {
+    transition: all .5s ease;
+    color: #101f30;
+    ;
+    border: 1px solid #09b5a2;
+    font-family:'lato','verdana' sans-serif;
+    /* text-transform: uppercase; */
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : white;
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 10px;
+    height: calc(50px + 5vh);
+    width: 150px;
+}
+.button:hover {
+    color: 101f30;
+    background-color: #d8e6e4;
 }
