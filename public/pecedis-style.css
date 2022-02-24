@@ -132,9 +132,10 @@ i{
     height: calc(50px + 5vh);
     width: 150px;
 }
-.button:hover {
+@media(hover: hover){.button:hover {
     color: white;
     background-color: transparent;
     border: 5px solid #8b8178;
+    }   
 }
 
