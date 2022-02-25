@@ -132,11 +132,30 @@ i{
     height: calc(50px + 5vh);
     width: 150px;
 }
-@media (hover: hover){
-    .button:hover {
+
+
+.button:hover{
     color: white;
     background-color: transparent;
     border: 5px solid #8b8178;
+}
+@media (hover: none){
+    .button{
+    transition: all .5s ease;
+    color: white;
+    border: 1px solid #8b8178;
+    font-family:'lato','verdana' sans-serif;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : #f6921e;
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 10px;
+    height: calc(50px + 5vh);
+    width: 150px;
     }   
 }
 
