@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#nav-bar{
+    display: flex;
+    list-style-type: none;
+    align-content: space-around;
+    align-items: center;
+    height: 15vh; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-family: 'lato','verdana',sans-serif;
+}
+
+#nav-bar > li{
+    text-align: justify;
+    padding: 5px;
+    font-size: calc(12px + .2vw);
+    font-weight:bold;
+}
+
+#nav-bar > li:hover{
+    background-color: white;
+    color: black;
+}
+
+#logo{
+    font-size: calc(25px + 1.4vw);
+    padding: 5px;
+    text-align: center;
+    font-weight: 900;
+    margin: 1vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
