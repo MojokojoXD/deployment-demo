@@ -44,6 +44,8 @@ nav{
     width: 100%;
     min-height: 2em;
     position: fixed;
+    top: 0;
+    left: 0;
     align-content: space-around;
     border-bottom: 2px solid#8b8178;
 }

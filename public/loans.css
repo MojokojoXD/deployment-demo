@@ -4,18 +4,24 @@
     text-decoration: none;
 }
 
+body{
+}
+
 #nav-bar{
     display: flex;
     list-style-type: none;
     align-content: space-around;
     align-items: center;
     height: 15vh; 
+    min-height: 50px;
     position: fixed;
+    z-index: 2;
     width: 100%;
     top: 0;
     background-color: black;
     color: white;
     font-family: 'lato','verdana',sans-serif;
+    opacity: 0.85;
 }
 
 #nav-bar > li{
@@ -31,7 +37,7 @@
 }
 
 #logo{
-    font-size: calc(25px + 1.4vw);
+    font-size: calc(25px + 1.4vh);
     padding: 5px;
     text-align: center;
     font-weight: 900;
@@ -42,6 +48,26 @@
 
 span{
     color: #f6921e;
+}
+
+@media all and (max-width: 390px){
+    #nav-bar > li{
+        display: none;
+        transition: .5s ease all;
+    }
+}
+
+#service-options{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    background-color: #f6921e;
+    border-bottom: 1px black solid;
+}
+
+#about-company{
+    display: flex;
+    height: 70vh;
 }
 
 
