@@ -159,8 +159,7 @@ span{
     border-left: 2px solid #8b8178;
 }
 
-#mobile-drop-down > ul > li{
-    padding: 5px;
+#mobile-drop-down > ul > a{
     list-style: none;
     margin: 2px;
     text-align: center;
@@ -168,5 +167,5 @@ span{
 }
 
 #mobile-drop-down > ul{
-    margin: 10px;
+    
 }

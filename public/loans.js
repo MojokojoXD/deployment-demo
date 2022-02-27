@@ -29,13 +29,14 @@ for(let i = 0; i < menuHover.length; i++){
 
 
 mobile_menu.addEventListener('click', (event) => {
-    if(side_bar.style.display === 'none'){
+
+    if(side_bar.style.display === 'block'){
+        side_bar.style.display = 'none'
+    }
+    else {
         side_bar.style.display = 'block'
     }
-    else{
-        side_bar.style.display = 'none'
 
-    }
 })
 
 
