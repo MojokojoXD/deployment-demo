@@ -104,6 +104,13 @@ span{
     }
 }
 
+@media all and (min-width: 600px){
+    #mobile-drop-down > ul{
+        display: none;
+    }
+}
+
+
 
 #service-options{
     display: flex;
@@ -159,13 +166,14 @@ span{
     border-left: 2px solid #8b8178;
 }
 
-#mobile-drop-down > ul > a{
+#mobile-drop-down > ul > li{
     list-style: none;
     margin: 2px;
     text-align: center;
     font-weight: bold;
+    width: inherit;
 }
 
-#mobile-drop-down > ul{
-    
+#mobile-drop-down > ul > li:hover{
+    background-color: #f6921e;
 }
