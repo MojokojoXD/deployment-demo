@@ -91,7 +91,8 @@ main{
 #tagline-1{
     text-align: center;
     font-size: calc(20px + .5vw);
-    font-weight: 300;
+    font-weight:bold;
+    font-style: italic;
 }
 
 #tagline-2{
