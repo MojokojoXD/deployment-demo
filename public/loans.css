@@ -7,15 +7,15 @@
 nav{
     height: 15vh;
     min-height: 50px;
-
     width: 100%;
     background-color: black;
     position: fixed;
-    opacity: 0.85;
     font-family: 'lato','verdana',sans-serif;
     border-bottom: 3px solid#8b8178;
     color: white;
     top: 0;
+    z-index: 2;
+    opacity: .9;
 }
 #nav-bar{
     display: flex;
@@ -24,9 +24,9 @@ nav{
     align-items: center;
     height: inherit;
     min-height: inherit;
-    z-index: 2;
+    z-index: inherit;
+    opacity: .9;
     width: 100%;
-    opacity: 0.9; 
 }
 
 #nav-bar > .nav-menu > li{
@@ -34,12 +34,14 @@ nav{
     padding: 5px;
     font-size: calc(12px + .2vw);
     font-weight:bold;
+    cursor: pointer;
 }
 
 #nav-bar > li {
     padding: 5px;
     font-size: calc(12px + .2vw);
     font-weight: bold;
+    cursor:pointer
 }
 
 #nav-bar > li > i {
@@ -55,8 +57,22 @@ nav{
 .hover{
     background-color: #f6921e;
     color: black;
-    opacity: 0.9;
+    z-index: 2;
 }
+
+#phone-menu{
+    display: none;
+    color: white;
+    flex-grow: 2;
+}
+
+#phone-menu, #phone-menu > i{
+    text-align: end;
+    padding: 5px;
+    font-size: 30px;
+}
+
+
 
 #logo{
     font-size: calc(25px + 1.4vh);
@@ -73,10 +89,22 @@ span{
 }
 
 @media all and (max-width: 390px){
-    #nav-bar .nav-menu{
+    #nav-bar .nav-menu, li{
         display: none;
         transition: .5s ease all;
     }
+
+    #phone-menu{
+        display: block;
+        color: white;
+    }
+}
+
+
+
+
+@media all and (min-width: 390px){
+    
 }
 
 #service-options{
@@ -104,9 +132,9 @@ span{
     display: none;
     position: absolute;
     background-color: #f6921e;
-    width: 15vw;
-    overflow: hidden;
-    opacity: 0.95;
+    width: calc(80px + 4vw);
+    z-index: 2;
+    border-radius: 0 4px 4px 4px;
 }
 
 .drop-down > a {
@@ -120,5 +148,5 @@ span{
 }
 
 .nav-menu{
+    border-radius: 3px 3px 0px 0px;
 }
-
