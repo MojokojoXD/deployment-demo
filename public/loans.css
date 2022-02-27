@@ -157,7 +157,7 @@ span{
     top:15vh;
     height: fit-content;
     min-height: fit-content;
-    display: block;
+    display: none;
     width: 50%;
     margin-left: 50%;
     border-left: 2px solid #8b8178;
