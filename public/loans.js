@@ -1,6 +1,6 @@
 const menuHover = document.querySelectorAll('.nav-menu');
 const drop_down_div = document.querySelectorAll('.drop-down');
-const mobile_menu = document.querySelector('#phone-menu')
+const mobile_menu = document.querySelector('menu-icon')
 const side_bar = document.querySelector('#mobile-drop-down')
 
 for(let i = 0; i < menuHover.length; i++){
