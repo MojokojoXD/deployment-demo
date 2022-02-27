@@ -154,8 +154,8 @@ span{
     height: fit-content;
     min-height: fit-content;
     display: none;
-    width: 50%;
-    margin-left: 50%;
+    width: 60%;
+    margin-left: 40%;
     border-left: 2px solid #8b8178;
 }
 
@@ -167,3 +167,6 @@ span{
     font-weight: bold;
 }
 
+#mobile-drop-down > ul{
+    margin: 10px;
+}
