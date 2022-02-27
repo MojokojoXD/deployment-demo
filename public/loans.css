@@ -9,7 +9,7 @@ a{
     color: white;
     text-decoration-color: none;
 }
-nav{
+.nav{
     height: 15vh;
     min-height: 50px;
     width: 100%;
@@ -71,10 +71,13 @@ nav{
     flex-grow: 2;
 }
 
-#phone-menu, #phone-menu > i{
+#phone-menu, #phone-menu > button{
     text-align: end;
     padding: 5px;
     font-size: 30px;
+    color: white;
+    background-color: black;
+    border: none;
 }
 
 
@@ -94,7 +97,7 @@ span{
 }
 
 @media all and (max-width: 600px){
-    #nav-bar .nav-menu, li{
+    #nav-bar .nav-menu, #nav-bar > li{
         display: none;
         transition: .5s ease all;
     }
@@ -105,12 +108,6 @@ span{
     }
 }
 
-
-
-
-@media all and (min-width: 390px){
-    
-}
 
 #service-options{
     display: flex;
@@ -155,3 +152,22 @@ span{
 .nav-menu{
     border-radius: 3px 3px 0px 0px;
 }
+
+#mobile-drop-down{
+    top:15vh;
+    height: fit-content;
+    min-height: fit-content;
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+    border-left: 2px solid #8b8178;
+}
+
+#mobile-drop-down > ul > li{
+    padding: 5px;
+    list-style: none;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
