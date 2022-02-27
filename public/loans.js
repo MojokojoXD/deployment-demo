@@ -3,6 +3,8 @@ const drop_down_div = document.querySelectorAll('.drop-down');
 const mobile_menu = document.querySelector('#menu-icon')
 const side_bar = document.querySelector('#mobile-drop-down')
 
+
+
 for(let i = 0; i < menuHover.length; i++){
     menuHover[i].addEventListener('mouseover', () => {
         menuHover[i].classList.add('hover')
@@ -26,11 +28,19 @@ for(let i = 0; i < menuHover.length; i++){
 }
 
 
-mobile_menu.addEventListener('click', () => {
-    if(side_bar.style.display === 'block'){
-        side_bar.style.display = 'none'
+mobile_menu.addEventListener('click', (event) => {
+    if(side_bar.style.display === 'none'){
+        side_bar.style.display = 'block'
     }
     else{
-        side_bar.style.display = 'block'
+        side_bar.style.display = 'none'
+
+    }
+})
+
+
+document.body.addEventListener('touchstart', (event) => {
+    if(event.target.id !== '1' && event.target.id !== 'mobile-drop-down' && event.target.id !== 'menu-icon'){
+        side_bar.style.display = 'none';
     }
 })
