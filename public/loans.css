@@ -2,38 +2,60 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    text-decoration-color: none;
 }
+nav{
+    height: 15vh;
+    min-height: 50px;
 
-body{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    opacity: 0.85;
+    font-family: 'lato','verdana',sans-serif;
+    border-bottom: 3px solid#8b8178;
+    color: white;
+    top: 0;
 }
-
 #nav-bar{
     display: flex;
     list-style-type: none;
     align-content: space-around;
     align-items: center;
-    height: 15vh; 
-    min-height: 50px;
-    position: fixed;
+    height: inherit;
+    min-height: inherit;
     z-index: 2;
     width: 100%;
-    top: 0;
-    background-color: black;
-    color: white;
-    font-family: 'lato','verdana',sans-serif;
-    opacity: 0.85;
+    opacity: 0.9; 
 }
 
-#nav-bar > li{
-    text-align: justify;
+#nav-bar > .nav-menu > li{
+    text-align: left;
     padding: 5px;
     font-size: calc(12px + .2vw);
     font-weight:bold;
 }
 
-#nav-bar > li:hover{
-    background-color: white;
+#nav-bar > li {
+    padding: 5px;
+    font-size: calc(12px + .2vw);
+    font-weight: bold;
+}
+
+#nav-bar > li > i {
+    font-size: 10px;
+    align-self: baseline;
+}
+
+/* #nav-bar > .nav-menu > li:hover{
+    background-color: #f6921e;
     color: black;
+} */
+
+.hover{
+    background-color: #f6921e;
+    color: black;
+    opacity: 0.9;
 }
 
 #logo{
@@ -51,7 +73,7 @@ span{
 }
 
 @media all and (max-width: 390px){
-    #nav-bar > li{
+    #nav-bar .nav-menu{
         display: none;
         transition: .5s ease all;
     }
@@ -59,10 +81,12 @@ span{
 
 #service-options{
     display: flex;
-    height: 70vh;
+    height: 85vh;
     width: 100%;
-    background-color: #f6921e;
+    background-image: linear-gradient(to right,#fcf6ba,#d1a347,#fcf6ba);
     border-bottom: 1px black solid;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-company{
@@ -70,5 +94,31 @@ span{
     height: 70vh;
 }
 
+.drop-down-content{
+    color: white;
+    text-decoration-color: none;
+    display: block;
+}
 
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: #f6921e;
+    width: 15vw;
+    overflow: hidden;
+    opacity: 0.95;
+}
+
+.drop-down > a {
+    display: block;
+    text-align: left;
+    margin-right: 10px;
+    padding: 5px;
+    color: black;
+    font-weight: 600;
+    font-size: calc(12px + .2vw)
+}
+
+.nav-menu{
+}
 
