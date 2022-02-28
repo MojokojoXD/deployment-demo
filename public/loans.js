@@ -28,20 +28,12 @@ for(let i = 0; i < menuHover.length; i++){
 }
 
 
-mobile_menu.addEventListener('click', (event) => {
-
-    if(side_bar.style.display === 'block'){
-        side_bar.style.display = 'none'
+mobile_menu.addEventListener('click', () => {
+    const slide = document.querySelector('.slide');
+    if(slide.style.marginLeft === '0px'){
+        slide.style.marginLeft = '-1000px';
     }
-    else {
-        side_bar.style.display = 'block'
-    }
-
-})
-
-
-document.body.addEventListener('touchstart', (event) => {
-    if(event.target.id !== '1' && event.target.id !== 'mobile-drop-down' && event.target.id !== 'menu-icon'){
-        side_bar.style.display = 'none';
+    else{
+        slide.style.marginLeft = '0px'
     }
 })
