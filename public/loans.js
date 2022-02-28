@@ -1,8 +1,8 @@
 const menuHover = document.querySelectorAll('.nav-menu');
 const drop_down_div = document.querySelectorAll('.drop-down');
 const mobile_menu = document.querySelector('#menu-icon')
-const side_bar = document.querySelector('#mobile-drop-down')
-const options_div = document.querySelector('#service-options')
+const exit_slide = document.querySelector('#exit')
+const slide = document.querySelector('.slide');
 
 
 for(let i = 0; i < menuHover.length; i++){
@@ -29,13 +29,16 @@ for(let i = 0; i < menuHover.length; i++){
 
 
 mobile_menu.addEventListener('click', () => {
-    const slide = document.querySelector('.slide');
+    
     if(slide.style.marginLeft === '0px'){
         slide.style.marginLeft = '-1000px';
-        options_div.style.filter = 'blur(0px)'
     }
     else{
         slide.style.marginLeft = '0px'
-        options_div.style.filter = 'blur(3px)'
     }
+})
+
+
+exit_slide.addEventListener('click', () => {
+    slide.style.marginLeft = '-1000px';
 })
