@@ -120,11 +120,17 @@ span{
     border-bottom: 1px black solid;
     justify-content: center;
     align-items: center;
+    filter: blur(0px);
+    transition-property: filter;
+    transition-duration: 400ms;
 }
 
 #about-company{
     display: flex;
     height: 70vh;
+    filter: blur(0px);
+    transition-property: filter;
+    transition-duration: 400ms;
 }
 
 .drop-down-content{
@@ -159,8 +165,8 @@ span{
 .slide{
     display: block;
     position: fixed;
-    width: 60%;
-    font-size: -20px;
+    width: 80%;
+    font-size: 2em;
     background-color: black;
     height: 100vh;
     color: white;
@@ -168,6 +174,18 @@ span{
     margin-left: -2000px;
     transition-property: margin-left;
     transition-duration: 400ms;
+    font-family: 'lato','verdana',sans-serif;
+}
+
+
+#mobile-drop-down > ul{
+    margin: 10px;
+    height: inherit;
+}
+
+#mobile-drop-down > ul > li{
+    line-height: 50px;
+    border-bottom: 2px solid #f6921e;
 }
 
 
