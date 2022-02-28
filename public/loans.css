@@ -195,10 +195,12 @@ span{
 
 .side-link{
     display: flex;
-    font-size: 0.8em;
+    font-size: 0.5em;
     margin-left: 2px;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #f6921e;
+
 }
 
 
