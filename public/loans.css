@@ -212,5 +212,9 @@ span{
     font-size: .7em;
 }
 
+.side-link > a {
+    width: 90%;
+}
+
 
 
