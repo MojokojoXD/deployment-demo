@@ -54,6 +54,11 @@ a{
     align-self: baseline;
 }
 
+.nav-menu > li > i {
+    font-size: 10px;
+    align-self: baseline;
+}
+
 
 .hover{
     background-color: #f6921e;
@@ -95,7 +100,6 @@ span{
 @media all and (max-width: 600px){
     #nav-bar .nav-menu, #nav-bar > li{
         display: none;
-        transition: .5s ease all;
     }
 
     #phone-menu{
